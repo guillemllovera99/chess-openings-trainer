@@ -1,0 +1,17 @@
+# Ignore engine binaries (never commit Stockfish)
+stockfish/
+
+# Model weights & optimizer state
+models/nn/checkpoints/
+models/nn/optimizer_state/
+
+# Replay buffer and any learned data
+data/cache/
+*.npz
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS junk
+.DS_Store
