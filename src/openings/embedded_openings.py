@@ -1,0 +1,22 @@
+"""
+Tiny embedded opening book as a Python dict.
+Maps a tuple of SAN moves to (ECO, Name).
+This mirrors and augments data/openings/eco_small.json.
+"""
+OPENINGS = {
+    ("e4", "e5", "Nf3", "Nc6", "Bb5"): ("C60", "Ruy Lopez"),
+    ("e4", "e5", "Nf3", "Nc6", "Bc4"): ("C50", "Italian Game"),
+    ("e4", "c5"): ("B20", "Sicilian Defence"),
+    ("e4", "e6"): ("C00", "French Defence"),
+    ("e4", "c6"): ("B10", "Caro-Kann Defence"),
+    ("d4", "Nf6", "c4", "g6"): ("E60", "King's Indian Defence"),
+    ("d4", "d5", "c4"): ("D06", "Queen's Gambit"),
+    ("d4", "d5", "c4", "c6"): ("D15", "Slav Defence"),
+    ("c4",): ("A10", "English Opening"),
+    ("Nf3",): ("A04", "Reti Opening"),
+    ("g3",): ("A00", "King's Fianchetto"),
+    ("b3",): ("A01", "Nimzo-Larsen Attack"),
+    ("e4", "e5", "f4"): ("C30", "King's Gambit"),
+    ("e4", "d5"): ("B01", "Scandinavian Defence"),
+    ("e4", "d6", "d4", "Nf6", "Nc3", "g6"): ("B07", "Pirc Defence"),
+}

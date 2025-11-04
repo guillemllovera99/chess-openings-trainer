@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chess-openings-trainer"
+version = "0.1.0"
+description = "A Stockfish-powered chess openings trainer with online learning."
+authors = [{ name = "Guillem Cucurull Llovera" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+  "python-chess>=1.999",
+  "torch>=2.2",
+  "numpy>=1.25",
+  "tqdm>=4.66",
+  "rich>=13.7",
+  "lmdb>=1.4",
+  "streamlit>=1.38",
+]
+
+[project.urls]
+homepage = "https://example.com/chess-openings-trainer"
+repository = "https://example.com/chess-openings-trainer"
+
+[tool.setuptools.packages.find]
+where = ["src"]
